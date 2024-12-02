@@ -87,7 +87,6 @@ int handle_grid_edges(GridSection* grid_section, char** current, char** next) {
     int edge_rows[] = {1, grid_section->rows};
     int edge_cols[] = {1, grid_section->cols};
 
-    // #pragma omp parallel for schedule(static)
     for (int col = 1; col <= grid_section->cols; ++col) {
         for (int i = 0; i < 2; ++i) {
             int row = edge_rows[i];
@@ -98,7 +97,6 @@ int handle_grid_edges(GridSection* grid_section, char** current, char** next) {
         }
     }
 
-    // #pragma omp parallel for schedule(static)
     for (int row = 1; row <= grid_section->rows; ++row) {
         for (int i = 0; i < 2; ++i) {
             int col = edge_cols[i];
@@ -274,7 +272,6 @@ void execute_game_of_life(char** current_grid, int rank, int num_processes, MPI_
         MPI_Irecv(&current_grid[grid_section->rows + 1][grid_section->cols + 1], 1, MPI_CHAR, neighbors->southeast, 0, communicator, &recv[7]);
         MPI_Isend(&current_grid[grid_section->rows][grid_section->cols], 1, MPI_CHAR, neighbors->southeast, 0, communicator, &send[7]);
 
-        // #pragma omp parallel for collapse(2) schedule(static)
         for(int row = 2; row <= grid_section->rows - 1; row++) {
             for(int col = 2; col <= grid_section->cols - 1; col++) {
                 int alive_neighbors = count_alive_cells(row, col, current_grid);
