@@ -25,8 +25,14 @@ The Conway's Game of Life or simply Life, is a cellular automaton devised by the
 * Clone the repo and move into the project directory
 * To compile the code run the below command
   ```
-    ./build.sh compile
+    mkdir -p bin
+    mpicc -o bin/conways_game src/*/*.c -lm
+  ``` 
+* To clean run the below command
   ```
+    rm -rf bin
+    rm -rf "conways_game.out"
+  ``` 
 * Once compilations is successful and without errors the job can be submitted to the HPC cluster using the below command:
   ```
     sbatch job.sl
