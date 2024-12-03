@@ -51,4 +51,17 @@ This documentation includes videos illustrating a variety of patterns in Conway'
 | Infinite Oscillator | Unbounded Growth |
 |:-----------:|:-----------:|
 | ![io](src/OpenGl/gif/infinite-osc.gif) | ![ug](src/OpenGl/gif/unbounded-growth.gif) |
+
+* To compile the code run the below command
+```
+g++ main.cpp StateReader.cpp -o gof -std=c++11 -I/opt/homebrew/include -L/opt/homebrew/lib -lGL -lglut -framework OpenGL
+open -a XQuartz
+export DISPLAY=:0
+
+``` 
+
+* To run the code run the below command
+``` 
+./gof
+```
   
