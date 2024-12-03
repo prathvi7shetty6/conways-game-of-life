@@ -48,9 +48,9 @@ This documentation includes videos illustrating a variety of patterns in Conway'
 | Nova | Glider Gun | Pular Oscillator |
 |:-----------:|:-----------:|:----------:|
 | ![nova](src/OpenGl/gif/nova.gif) | ![gl](src/OpenGl/gif/glider-gun.gif) | ![po](src/OpenGl/gif/pular_oscillator.gif) |
-| Infinite Oscillator | Unbounded Growth |
-|:-----------:|:-----------:|
-| ![io](src/OpenGl/gif/infinite-osc.gif) | ![ug](src/OpenGl/gif/unbounded-growth.gif) |
+| Infinite Oscillator | Unbounded Growth | Glider
+|:-----------:|:-----------:||:-----------:|
+| ![io](src/OpenGl/gif/infinite-osc.gif) | ![ug](src/OpenGl/gif/unbounded-growth.gif) | ![gli](src/OpenGl/gif/glider.gif)
 
 * To compile the code run the below command
 ```
