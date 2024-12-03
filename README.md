@@ -19,8 +19,6 @@ The Conway's Game of Life or simply Life, is a cellular automaton devised by the
 * Addition the number of generations, grid size and output file name are passed as parameters
 * For visualization we have used OpenGL 
 
-## Patterns
-
 ## MPI Execution
 * Clone the repo and move into the project directory
 * To compile the code run the below command
