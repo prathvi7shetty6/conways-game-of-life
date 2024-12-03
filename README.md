@@ -41,6 +41,14 @@ The Conway's Game of Life or simply Life, is a cellular automaton devised by the
 * For debugging errors and failures conways_game.out file can be used
 
 ## OpenGL Execution
-* 
-*
+This documentation includes videos illustrating a variety of patterns in Conway's Game of Life, all rendered with OpenGL to provide enhanced graphical clarity and fluidity. OpenGL, a powerful cross-platform graphics library, ensures high-quality visual representation of the evolving patterns, making it easier to observe intricate dynamics. The showcased patterns are demonstrated using predefined input files, carefully selected to highlight different behaviors and phenomena. These simulations are presented across grids of varying sizes, offering a comprehensive exploration of how the rules of Conway's Game of Life play out in diverse scenarios.
+
+
+
+| Nova | Glider Gun | Pular Oscillator |
+|:-----------:|:-----------:|:----------:|
+| ![nova](src/OpenGl/gif/nova.gif) | ![gl](src/OpenGl/gif/glider-gun.gif) | ![po](src/OpenGl/gif/pular_oscillator.gif) |
+| Infinite Oscillator | Unbounded Growth |
+|:-----------:|:-----------:|
+| ![io](src/OpenGl/gif/infinite-osc.gif) | ![ug](src/OpenGl/gif/unbounded-growth.gif) |
   
