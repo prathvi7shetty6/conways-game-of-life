@@ -1,16 +1,14 @@
 # Conways Game of life
-The Conway's Game of Life or simply Life, is a cellular automaton devised by the British mathematician John Horton Conway.
+The Conway's Game of Life or simply Life, is a cellular automaton devised by the British mathematician John Horton Conway. It is a zero-player game where the evolution is determined entirely by its initial state, requiring no further input. 
 
 ## About the game:
-* It is a zero player game
-* It's evolution is determined by its initial state, requiring no further input
 * The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells
-* The cells can have 2 state, live or dead
+* Each cell on the grid can exist in one of two states: **alive** or **dead**.
 * Every cell interacts with its eight neighbors
-* Any live cell with fewer than two live neighbours dies
-* Any live cell with two or three live neighbours lives on to the next generation
-* Any live cell with more than three live neighbours dies
-* Any dead cell with exactly three live neighbours becomes a live cell
+* **Underpopulation**: Any live cell with fewer than two live neighbours dies
+* **Overpopulation**: Any live cell with two or three live neighbours lives on to the next generation
+* **Survival**: Any live cell with more than three live neighbours dies
+* **Reproduction**: Any dead cell with exactly three live neighbours becomes a live cell
 
 ## Implementation details:
 * We have used MPI (Message Passing Interface) to implement Conway's Game of Life by distributing the grid among multiple processors for parallel computation
@@ -62,4 +60,15 @@ export DISPLAY=:0
 ``` 
 ./gof
 ```
-  
+
+## Why Conway's Game of Life for Scientific Computing Project?
+Conway's Game of Life is a great choice for a scientific computing project because it combines simple math with interesting computational challenges. It’s an excellent way to:
+
+* **Explore Parallel Computing:** The Game of Life inherently involves computations that can be distributed across processors, making it a practical example for implementing parallel algorithms. Using MPI, we can efficiently handle large grids and perform high-speed simulations, which is crucial for modern scientific applications.
+
+* **Communication in Distributed Systems:** Implementing the Game of Life in a parallel environment requires efficient communication between processors to update boundary conditions. This illustrates the principles of data sharing and synchronization in distributed systems.
+
+* **Visualization Techniques:** The Game of Life’s dynamic patterns are perfect for graphical representation. Using OpenGL, we make it easy to visualize the results, combining computation with clear, user-friendly displays.
+
+* **Practical Applications:** Beyond its theoretical appeal, the Game of Life has practical implications in fields like biology, physics, and computer science, such as modeling population dynamics and pattern formation.
+
